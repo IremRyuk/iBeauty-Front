@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react'
-import {Box,Stack} from '@mui/material'
+import React from 'react'
+import {Box} from '@mui/material'
 import '../Styles/Home/home.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import One from '../Images/Slider/1.webp'
@@ -7,18 +7,15 @@ import Two from '../Images/Slider/2.webp'
 import Three from '../Images/Slider/4.webp'
 import Search from '../Home Components/Search'
 import '../Styles/Ad/ad.css'
-// import MainContent from '../Shop/MainContent'
 import {useNavigate} from 'react-router-dom'
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
 
 
 // import required modules
-import {Autoplay,Pagination, } from 'swiper/modules';
+import {Autoplay, } from 'swiper/modules';
 import { useSelector } from 'react-redux';
-import SearchBox from '../Components/SearchBox';
 
 export default function Ad() {
   const navigate = useNavigate()
@@ -44,7 +41,7 @@ export default function Ad() {
         modules={[Autoplay]}
         className="slider"
       >
-               {/* import images from Data storag e */}
+               {/* import images from Data storage */}
                {Data.map(res=>{
                    return(
                        <SwiperSlide key={res.id}  className="box-slider" style={{backgroundImage:res.bg}}>
