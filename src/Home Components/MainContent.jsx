@@ -16,7 +16,7 @@ export default function MainContent() {
 
   useEffect(()=>{
 const allData = async () => {
-  const res = await fetch('http://localhost:7777/data')
+  const res = await fetch('https://ibeaury-back.onrender.com/data')
   const data = await res.json()
   setData(data)
 }

@@ -13,7 +13,7 @@ export default function Home() {
   const data = useSelector(data=>data.data)
   useEffect(()=>{
     const GetAllData = async () => {
-      const res = await fetch('http://localhost:7777/data/')
+      const res = await fetch('https://ibeaury-back.onrender.com/data/')
       const json = await res.json()
       dispatch(DefDataAct(json))
     }

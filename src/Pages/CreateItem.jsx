@@ -114,7 +114,7 @@ export default function CreateItem() {
       price:price,
   }
   try{
-    const newData = await axios.post('http://localhost:7777/data/',allInfo,{
+    const newData = await axios.post('https://ibeaury-back.onrender.com/data/',allInfo,{
       headers:{
         'Content-Type':'application/json'
       }

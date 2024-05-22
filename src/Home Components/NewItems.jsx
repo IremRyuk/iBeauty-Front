@@ -10,7 +10,7 @@ export default function NewItems() {
     const [limData,setLimData] = useState(null)
     useEffect(()=>{
 const getLimData = async () => {
-    const res = await fetch('http://localhost:7777/data/lim')
+    const res = await fetch('https://ibeaury-back.onrender.com/data/lim')
     const json = await res.json()
     setLimData(json)
 }
