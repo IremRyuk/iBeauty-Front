@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pinyon+Script&family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eaa4ff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 67, 199);
+}
+
+.nav {
+  width: 100vw;
+  height: 10vh;
+  background-color: #eaa4ff;
+}
+
+.nav-dark {
+  width: 100vw;
+  height: 10vh;
+  background-color: #2d2d30;
+}
+
+.nav-menu {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-menu-dark {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 67, 199);
+  font-weight: bold;
+}
+
+.nav-header {
+  font-size: 30px;
+  font-family: "Pinyon Script", cursive;
+  cursor: pointer;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  background-color: white;
+}
+
+.line-dark {
+  width: 2px;
+  height: 30px;
+  background-color: black;
+}
+
+.fv {
+  color: white;
+}
+
+.fv-dark {
+  color: rgb(255, 67, 199);
+}
+
+.person {
+  border: 2px solid white;
+  color: white;
+}
+.person:hover {
+  border: 2px solid white;
+}
+
+.person-dark {
+  border: 2px solid rgb(255, 67, 199);
+  color: rgb(255, 67, 199);
+}
+.person-dark:hover {
+  border: 2px solid rgb(255, 67, 199);
+}
+
+.langSelector {
+  position: relative;
+}
+
+.languages {
+  position: absolute;
+  top: 100%;
+  z-index: 101;
+  display: none;
+  width: 60px;
+}
+
+.langSelector:hover .languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}/*# sourceMappingURL=nav.css.map */

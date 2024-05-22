@@ -1,0 +1,44 @@
+// Google
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+// Code
+.footer{
+    padding-top: 50px;
+    border-top: 1px solid gray;
+    width: 100vw;
+    height: fit-content;
+    padding: 50px;
+    background-color: white;
+}
+.footer-dark{
+    padding-top: 50px;
+    border-top: 1px solid rgb(221, 221, 221);
+    width: 100vw;
+    background-color: #2d2d30;
+    height: fit-content;
+    padding: 50px;
+}
+.footer-txt{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    color: black;
+    font-weight: bold;
+    font-weight:bold;
+}
+.footer-txt-dark{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    color: rgb(255, 67, 199);
+    font-weight:bold;
+}
+.footer-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.soc-box{
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.addItem {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.createImage {
+  width: 60%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=createItem.css.map */

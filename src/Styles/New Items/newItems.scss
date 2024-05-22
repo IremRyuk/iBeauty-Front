@@ -1,0 +1,88 @@
+// Default SCSS
+@import '../default/default.scss';
+// New Items
+.newItems {
+    padding: 30px 20px;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.newItems-dark {
+    padding: 30px 20px;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2d30;
+    color: white;
+}
+.offers-name {
+    width: 70%;
+    height: fit-content;
+    font-size: 44px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    margin-bottom: 20px;
+}
+.offers {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2.4mm;
+    padding: 5px;
+    background-color: #b6b6b6;
+}
+.offers-dark {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2.4mm;
+    padding: 5px;
+    background-color: #e4e4e4;
+}
+.offers-images {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 2.4mm;
+}
+.offers-box{
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    &:hover .offers-images{
+        filter: blur(1px);
+        border-radius: 2.4mm;
+    }
+    &:hover .offers-name-item{
+        display: flex;
+    }
+}
+.offers-box-dark{
+    position: relative;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    &:hover .offers-name-item-dark{
+        display: flex;
+    }
+}
+.offers-name-item{
+    @include newItemsName;
+    background-color: #eaa4ff;
+    color: white;
+}
+.offers-name-item-dark{
+    @include newItemsName;
+    background-color: #2d2d30;
+    color: rgb(255, 67, 199);
+}
